@@ -16,6 +16,7 @@ if uploaded_file:
     
     if st.button("Dapatkan Entry"):
         model = genai.GenerativeModel(model_name="models/gemini-1.5-flash")
+
         prompt = "Analisis gambar chart XAU/USD ini. Berikan: 1. Entry (Buy/Sell), 2. SL, 3. TP, 4. Volume (Besar/Kecil), 5. Tahap Keyakinan. Gunakan format yang kemas."
         response = model.generate_content([prompt, image])
         st.write(response.text)

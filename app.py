@@ -24,8 +24,7 @@ if uploaded_file:
         with st.spinner('AI sedang mengira setup...'):
             try:
                 # Gunakan format nama model penuh untuk elakkan ralat NotFound
-                model = genai.GenerativeModel('gemini-1.5-flash-latest')
-
+                model = genai.GenerativeModel('gemini-1.5-flash')
                 
                 prompt = """
                 Bertindak sebagai pakar trader XAU/USD. Lihat screenshot chart ini dan berikan:

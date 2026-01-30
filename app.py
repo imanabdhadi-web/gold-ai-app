@@ -24,7 +24,7 @@ if uploaded_file:
         with st.spinner('AI sedang mengira setup...'):
             try:
                 # Gunakan format nama model penuh untuk elakkan ralat NotFound
-                model = model = genai.GenerativeModel('gemini-1.5-pro')
+                model = genai.GenerativeModel('gemini-1.5-flash-latest')
 
                 
                 prompt = """
